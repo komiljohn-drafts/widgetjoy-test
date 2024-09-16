@@ -3,7 +3,6 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 
 import { Tab, TabList, Tabs } from "@/components/ui/tabs";
-import { SimpleText } from "@/components/ui/typography";
 import Routes from "@/utils/routes";
 
 export default function WidgetTabs() {
@@ -26,10 +25,12 @@ export default function WidgetTabs() {
           href={Routes.widget_detail_customize(id as string)}
           className={twMerge(
             "py-1.5 px-3 focus-ring rounded-md",
-            isCustomizePage && "bg-white dark:bg-secondary-dark shadow-sm"
+            isCustomizePage
+              ? "bg-white dark:bg-secondary-dark shadow-sm dark:text-secondary-700"
+              : "dark:text-tertiary-dark-600"
           )}
         >
-          <SimpleText color="secondary-700">Customize</SimpleText>
+          Customize
         </Tab>
         <Tab
           href={
@@ -37,7 +38,9 @@ export default function WidgetTabs() {
           }
           className={twMerge(
             "py-1.5 px-3 focus-ring rounded-md",
-            (isSubmissionsPage || isContentPage) && "bg-white dark:bg-secondary-dark shadow-sm"
+            isSubmissionsPage || isContentPage
+              ? "bg-white dark:bg-secondary-dark shadow-sm dark:text-secondary-700"
+              : "dark:text-tertiary-dark-600"
           )}
           id="submissions"
         >

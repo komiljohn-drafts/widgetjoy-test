@@ -49,15 +49,15 @@ export default function WorkspaceDropdown() {
             <MenuItem className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark mb-1">
               <Link href={Routes.settings_team} className="flex items-center gap-2 p-3">
                 <Settings2 size={20} className="text-text-secondary dark:text-white" />
-                <SimpleText tag="span" color="primary-900" weight="font-semibold">
-                  Manage Team
+                <SimpleText tag="span" color="primary-900" weight="font-medium">
+                  Team Settings
                 </SimpleText>
               </Link>
             </MenuItem>
             <MenuItem className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark">
               <Link href={`${Routes.settings_team}?invite-modal=true`} className="flex items-center gap-2 p-3">
                 <Plus size={20} className="text-text-secondary dark:text-white" />
-                <SimpleText tag="span" color="primary-900" weight="font-semibold">
+                <SimpleText tag="span" color="primary-900" weight="font-medium">
                   Create new Team
                 </SimpleText>
               </Link>
@@ -77,7 +77,7 @@ export default function WorkspaceDropdown() {
               >
                 <span className="flex items-center gap-2">
                   <Building2 size={20} className="text-text-secondary dark:text-white" />
-                  <SimpleText tag="span" color="primary-900" weight="font-semibold">
+                  <SimpleText tag="span" color="primary-900" weight="font-medium">
                     {item.name}
                   </SimpleText>
                 </span>

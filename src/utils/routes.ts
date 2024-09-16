@@ -7,7 +7,7 @@ const Routes = {
   settings: "/settings",
   settings_team: "/settings/team",
   settings_billing: "/settings/billing",
-  settings_profile: "/settings/profile",
+  profile: "/profile",
   widget_detail_customize: (id: string | number) => `/dashboard/widgets/${id}/customize`,
   widget_detail_submission: (id: string | number) => `/dashboard/widgets/${id}/submissions`,
   widget_detail_content: (id: string | number) => `/dashboard/widgets/${id}/content`,

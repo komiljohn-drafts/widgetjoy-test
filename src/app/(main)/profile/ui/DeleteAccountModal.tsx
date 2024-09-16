@@ -15,7 +15,7 @@ import { Modals } from "@/utils/constants";
 import Routes from "@/utils/routes";
 import { requiredStringField } from "@/utils/validationFields";
 
-import { RoundedLinesSvg } from "../../../../../../public/icons";
+import { RoundedLinesSvg } from "../../../../../public/icons";
 
 export const DeleteAccountSchema = v.object({
   password: requiredStringField("Please enter your password"),

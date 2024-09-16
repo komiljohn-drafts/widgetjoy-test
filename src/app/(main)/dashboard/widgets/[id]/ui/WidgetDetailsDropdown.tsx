@@ -42,7 +42,7 @@ export default function WidgetDetailsDropdown() {
             className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark flex items-center gap-2 p-3 lg:hidden"
           >
             <Code size={20} className="text-text-secondary dark:text-white" />
-            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-semibold">
+            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-medium">
               Get embed code
             </SimpleText>
           </MenuItem>
@@ -51,13 +51,13 @@ export default function WidgetDetailsDropdown() {
             className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark flex items-center gap-2 p-3"
           >
             <Link2 size={20} className="text-text-secondary dark:text-white -rotate-45" />
-            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-semibold">
+            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-medium">
               Copy widget link
             </SimpleText>
           </MenuItem>
           <MenuItem className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark flex items-center gap-2 p-3">
             <CircleHelp size={20} className="text-text-secondary dark:text-white" />
-            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-semibold">
+            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-medium">
               Usage guide
             </SimpleText>
           </MenuItem>
@@ -67,7 +67,7 @@ export default function WidgetDetailsDropdown() {
             className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark flex items-center gap-2 p-3"
           >
             <Trash2 size={20} className="text-text-secondary dark:text-white" />
-            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-semibold">
+            <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-medium">
               Delete widget
             </SimpleText>
           </MenuItem>

@@ -29,9 +29,9 @@ export default function UserMenuDropdown() {
             </SimpleText>
           </Header>
           <MenuItem className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark mb-1">
-            <Link href={Routes.settings_profile} className="flex items-center gap-2 p-3">
+            <Link href={Routes.profile} className="flex items-center gap-2 p-3">
               <User2 size={20} className="text-text-secondary dark:text-white" />
-              <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-semibold">
+              <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-medium">
                 Profile
               </SimpleText>
             </Link>
@@ -39,7 +39,7 @@ export default function UserMenuDropdown() {
           <MenuItem className="outline-none bg-transparent rounded-md cursor-pointer focus:bg-disabled focus:dark:bg-active-dark">
             <Link href={Routes.login} className="flex items-center gap-2 p-3">
               <LogOut size={20} className="text-text-secondary dark:text-white" />
-              <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-semibold">
+              <SimpleText tag="span" color="primary-900" className="mr-2" weight="font-medium">
                 Logout
               </SimpleText>
             </Link>
